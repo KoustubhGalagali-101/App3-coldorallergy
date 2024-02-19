@@ -20,7 +20,7 @@ Brief Description of Goal of Code:
 To be able to create a prototype diagnosis app that calculates the probability of having a cold versus allergies
  
 Known Issues:
-blah, blah, blah, blah
+No know issues for the code
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -59,11 +59,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%";
 	}
-
+//The given function calculates the probability of allergies and the probability of a cold by dividing the allergy and cold counts by four and then multiplying by a 100//
 	
   </script>
 
-
+<!--Script code ends right above-->
 
 <style>	
 .body {
@@ -86,7 +86,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     z-index: 1;
 }
 </style>
-<!--Code above establishes page and body margins along with the premise code for future scripts that require another page to be created-->
+<!--Code above establishes page and body margins along with the premise code for future scripts that require other pages to be created-->
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Cold or Allergies?</h1>
@@ -115,56 +115,57 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 </div>
 <!--Code above establishes two buttons with each coding for either +1 value to the allergy variable or the cold variable-->
+<!--Code also directs the user to page 2-->
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
-	
+<!--Code creates page two of the program and asks the question of whether or not you have a fever-->
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
 		<a href="#three" onclick="coldAdd();" class="w3-btn w3-grey w3-round">Yes </a>
 		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-grey w3-round">No </a>
 	</div>
 </div>	
-
+<!--Code establishes buttons that adds +1 to the running total to either the allergy variable or the cold variable. Also redirects to page three of the program-->
 
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
-
+<!--Code creates page three and asks the question "Do you have a sore throat?"-->
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>
 		<a href="#four" onclick="coldAdd();" class="w3-btn w3-grey w3-round">Yes </a>
 		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-grey w3-round">No </a>
 	</div>
 </div>
-
+<!--Code establishes buttons for page three and adds +1 to the running total to either the allergy variable or the cold variable. Redirects to page four-->
 	
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
-
+<!--Code establishes page four and question four that states "Are your symptoms seasonal or chronic?"-->
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
 		<a href="#five" onclick="allergyAdd();" class="w3-btn w3-grey w3-round">Yes </a>
 		<a href="#five" onclick="coldAdd();" class="w3-btn w3-grey w3-round">No </a>
 	</div>
 </div>
-
+<!--Code establishes buttons for page four and adds +1 to the running total to either the allergy variable or the cold variable. Redirects to page five-->
 
 <div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
-	
+<!--Establishes page five as the results page-->	
 	<div id="content" class="w3-container">
 		<a onclick="diagnosisResults();" class="w3-btn w3-grey w3-round"> Click for Results </a>
 		<p id="results" ></p>
 	</div>
 </div>
-	
+<!--Code allows diagnosisResults function to operate and calculate the probability for having a cold or allergy and then presenting that probability on this page after clicking the Click for Results button-->	
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
@@ -172,3 +173,4 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 </body>
 </html>
+<!--Code ends the program and establishes the footer and completes the website-->
