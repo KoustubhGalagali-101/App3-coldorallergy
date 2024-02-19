@@ -53,12 +53,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 //When the button that has the coldAdd function is clicked the total score for cold adds up by one//
 
-
 	function diagnosisResults(){
 		var allergyPercent = (allergy_count/4) * 100;
 		var coldPercent = (cold_count/4) * 100;
 		var result = document.getElementById("results");
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%";
+		resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%";
 	}
 
 	
@@ -161,8 +160,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<a onclick="diagnosisResults();" class="w3-btn w3-grey w3-round">Click for Results </a>
-		<p id="result"></p>
+		<a onclick="diagnosisResults();" class="w3-btn w3-grey w3-round"> Click for Results </a>
+		<p id="result" ></p>
 	</div>
 </div>
 	
