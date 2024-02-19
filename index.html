@@ -144,6 +144,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 </div>
 
+	<script>
+		function diagnosisResults(){
+			allergyPercent = (allergy_count/4) * 100
+			coldPercent = (cold_count/4) * 100
+			var result = document.getElementById("results");
+			result.innerHTML = "Probability it is allergies =" + allergyPercent + "%" "<br> Probability it is a cold =" + coldPercent + "%";
+		}
+	</script>
 
 <div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
@@ -151,25 +159,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<a href="#results" class="w3-btn w3-grey w3-round">Click for Results </a>
+		<a onclick="diagnosisResults();" class="w3-btn w3-grey w3-round">Click for Results </a>
 	</div>
 </div>
 	
-<div class="page" id="results">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Results</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-		<script>
-			var allergyPercent = allergy_count * 25;
-			var coldPercent = cold_count * 25;
-			var resultText = document.getElementById("results");
-			resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
-			alert(allergy_count + " " + allergyPercent + " " + cold_count + " " + coldPercent);
-		</script>
-	</div>
-</div>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
